@@ -3,14 +3,14 @@ import { useSelector } from 'react-redux'
 import { Navigate, Outlet } from 'react-router-dom'
 import Header from './layout/Header'
 
-const ProtectedRoutes = () => {
+const ProtectedRoutes = ({logoPokedex}) => {
    
     const nameTrainer =  useSelector(store => store.nameTrainer)
     
     if(nameTrainer){
         return (
             <>
-                <Header/>
+                <Header logoPokedex={logoPokedex}/>
                 <Outlet/>
             </>
         )

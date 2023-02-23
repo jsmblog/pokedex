@@ -4,7 +4,7 @@ import { setNameTrainerGlobal } from '../../slices/nameTrainer'
 
 
 
-const Home = () => {
+const Home = ({logoPokedex , pokedexpikachu}) => {
     const dispatch = useDispatch()
  
     const handleSubmit = (e) =>{
@@ -17,12 +17,12 @@ const Home = () => {
     <div className='logoHome'>
         <section >
             <div className='imgHomeLogo'> 
-                <img src="public\logo-pokedex.png" alt="" width={200} />
+                <img src={logoPokedex} alt="" width={200} />
             </div>
         <section className='cardWelcome'>
         <div className='smsOfWelcome'>
             <div className='pikachu'>
-            <img src='public\pokedexImg.png'></img>
+            <img src={pokedexpikachu}></img>
             </div>
             <h2>
                 ¡ Hello Trainer !

@@ -2,7 +2,8 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { logOut } from '../../slices/nameTrainer'
 
-const Header = () => {
+
+const Header = ({logoPokedex}) => {
     
     const dispatch = useDispatch()
 
@@ -13,7 +14,7 @@ const Header = () => {
   return (
     <header >
         <div>
-            <div className='headerprincipal'><img src="public\logo-pokedex.png" alt="" /></div>
+            <div className='headerprincipal'><img src={logoPokedex} alt="" /></div>
         </div>
         <div>
             <div><button className='btnHeader' onClick={handleClickLogOut} >Log out</button></div>
