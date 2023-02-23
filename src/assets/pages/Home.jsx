@@ -17,12 +17,12 @@ const Home = () => {
     <div className='logoHome'>
         <section >
             <div className='imgHomeLogo'> 
-                <img src="/public/logo-pokedex.png" alt="" width={200} />
+                <img src="public\logo-pokedex.png" alt="" width={200} />
             </div>
         <section className='cardWelcome'>
         <div className='smsOfWelcome'>
             <div className='pikachu'>
-            <img src='/public/download-removebg-preview.png'></img>
+            <img src='public\pokedexImg.png'></img>
             </div>
             <h2>
                 ¡ Hello Trainer !
